@@ -1,0 +1,96 @@
+.combo-image {
+  width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  border-radius: var(--radio);
+  border: 3px solid var(--marron);
+  background: var(--arena);
+}
+
+.combo-price {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--marron);
+  color: var(--blanco);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.combo-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.combo-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.combo-highlight {
+  padding: 16px;
+  border-left: 8px solid var(--verde);
+  border-radius: 12px;
+  background: var(--verde-claro);
+  font-weight: 700;
+}
+
+.combo-warning {
+  padding: 16px;
+  border-left: 8px solid var(--naranja);
+  border-radius: 12px;
+  background: #fff3cd;
+  font-weight: 800;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--marron);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 16px;
+  border: 3px solid var(--marron);
+  border-radius: 14px;
+  background: var(--blanco);
+  color: var(--texto);
+}
+
+.textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.hint {
+  font-size: 16px;
+  color: #5b4632;
+}
+
+.form-row {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 560px) {
+  .form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

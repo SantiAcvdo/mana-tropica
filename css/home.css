@@ -1,0 +1,84 @@
+.home-hero {
+  padding: 30px 10px 10px;
+  text-align: center;
+}
+
+.home-options {
+  display: grid;
+  gap: 20px;
+  margin-top: 26px;
+}
+
+.home-option {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 260px;
+  padding: 24px 20px;
+  border: 4px solid var(--marron);
+  border-radius: 24px;
+  background: var(--blanco);
+  color: var(--marron);
+  text-align: left;
+  text-decoration: none;
+  box-shadow: var(--sombra);
+}
+
+.home-option:hover {
+  background: var(--arena);
+}
+
+.home-option-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.home-option-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.home-option-text {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.home-option-cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.home-option-combo .home-option-cta {
+  background: var(--naranja);
+  color: var(--blanco);
+}
+
+.home-option-paletas .home-option-cta {
+  background: var(--verde);
+  color: var(--blanco);
+}
+
+.home-note {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: var(--radio);
+  background: rgba(255, 255, 255, 0.94);
+  border: 2px solid var(--borde);
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 700px) {
+  .home-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
